@@ -13,6 +13,7 @@ import { AuthComponent } from './components/auth/auth.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { SigninComponent } from './components/auth/signin/signin.component';
 import { PicFormComponent } from './components/pics/pic-form/pic-form.component';
+import { UserListComponent } from './components/user/user-list/user-list.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { PicFormComponent } from './components/pics/pic-form/pic-form.component'
     AuthComponent,
     LoginComponent,
     SigninComponent,
-    PicFormComponent
+    PicFormComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule
