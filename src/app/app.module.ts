@@ -14,6 +14,15 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { SigninComponent } from './components/auth/signin/signin.component';
 import { PicFormComponent } from './components/pics/pic-form/pic-form.component';
 import { UserListComponent } from './components/user/user-list/user-list.component';
+import { Routes, RouterModule } from '@angular/router';
+import { MainComponent } from './components/pages/main/main.component';
+
+
+const appRoutes: Routes = [
+  { path: 'main', component: MainComponent },
+  { path: '', redirectTo: 'main', pathMatch: 'full'},
+  { path: '**', redirectTo: 'main'}
+];
 
 
 @NgModule({
@@ -29,10 +38,12 @@ import { UserListComponent } from './components/user/user-list/user-list.compone
     LoginComponent,
     SigninComponent,
     PicFormComponent,
-    UserListComponent
+    UserListComponent,
+    MainComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
