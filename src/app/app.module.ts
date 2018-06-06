@@ -16,6 +16,7 @@ import { PicFormComponent } from './components/pics/pic-form/pic-form.component'
 import { UserListComponent } from './components/user/user-list/user-list.component';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './components/pages/main/main.component';
+import { PicItemService } from './services/pic-item.service';
 
 
 const appRoutes: Routes = [
@@ -45,7 +46,7 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [],
+  providers: [PicItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
