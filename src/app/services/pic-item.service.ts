@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Picture } from '../models/pic.model';
+import { Picture } from '../models/picture.model';
 import { Subject } from 'rxjs/Subject';
 
 @Injectable()
